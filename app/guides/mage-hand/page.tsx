@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -37,7 +38,7 @@ export default function MageHandPage() {
             Mage Hand — Location &amp; Uses
           </h1>
           <p className="mt-2 text-brand-muted">
-            The must-have cantrip for tree climbing, hidden items, and the Sphinx Riddle.
+            The must-have <Link href="/guides/spell-preparation" className="text-brand-gold underline underline-offset-2 hover:text-brand-text">cantrip</Link> for tree climbing, hidden items, and the Sphinx Riddle.
             <strong className="text-brand-text"> Dexterity checks will fail</strong> — Mage Hand is the intended solution.
           </p>
         </header>

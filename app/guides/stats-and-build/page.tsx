@@ -1,16 +1,18 @@
+import Link from 'next/link'
 import RiskWarning from '@/components/RiskWarning'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Stats & Build Guide — Intelligence vs Charisma | Esoteric Ebb',
   description:
-    'Esoteric Ebb build guide: Intelligence for passive checks & deduction, Charisma for manipulation & dialogue control. Stat priorities, Dexterity pitfalls, and recommended builds.',
+    'Esoteric Ebb build guide: Intelligence for passive checks & deduction, Charisma for manipulation & dialogue control. Stat priorities, Dexterity pitfalls, and recommended builds. Level cap 6, ~25h main story.',
   keywords: [
     'esoteric ebb build',
     'esoteric ebb stats',
     'esoteric ebb intelligence',
     'esoteric ebb charisma',
     'esoteric ebb best build',
+    'esoteric ebb spells',
   ],
 }
 
@@ -127,6 +129,15 @@ export default function StatsAndBuildPage() {
               </p>
             </div>
           </div>
+        </section>
+
+        {/* Related Guides */}
+        <section className="mt-10">
+          <h2 className="font-display text-xl font-bold text-brand-text">Related Guides</h2>
+          <ul className="mt-3 space-y-1.5 text-sm text-brand-muted list-disc list-inside">
+            <li>Dexterity too low? Learn which <Link href="/guides/spell-preparation" className="text-brand-gold underline underline-offset-2 hover:text-brand-text">spells to prepare</Link> as alternatives</li>
+            <li>Understand <Link href="/guides/companions" className="text-brand-gold underline underline-offset-2 hover:text-brand-text">Snell &amp; companion</Link> interactions with your build choices</li>
+          </ul>
         </section>
       </article>
     </>

@@ -1,11 +1,12 @@
 import QuickFixes from '@/components/QuickFixes'
 import RiskWarning from '@/components/RiskWarning'
+import StuckChecker from '@/components/StuckChecker'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Esoteric Ebb Walkthrough & Guide — Riddles, Builds, Tips',
   description:
-    'Complete Esoteric Ebb guide: Sphinx riddle solution, Star Witness walkthrough, Deck of Many Things, best builds, rest mechanics & community bug fixes.',
+    'Complete Esoteric Ebb guide: Sphinx riddle solution, Star Witness walkthrough, Deck of Many Things, best builds, rest mechanics, map navigation tips & community bug fixes. PC (Steam) only — no PS5, Switch or Xbox release yet.',
   keywords: [
     'esoteric ebb walkthrough',
     'esoteric ebb riddle',
@@ -15,6 +16,10 @@ export const metadata: Metadata = {
     'esoteric ebb build',
     'esoteric ebb mage hand',
     'esoteric ebb sleep',
+    'esoteric ebb map',
+    'esoteric ebb price',
+    'esoteric ebb ps5',
+    'esoteric ebb switch',
   ],
 }
 
@@ -39,6 +44,9 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+
+      {/* Stuck Checker — most prominent position */}
+      <StuckChecker />
 
       {/* Quick Fixes Grid */}
       <QuickFixes />

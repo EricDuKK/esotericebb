@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -78,7 +79,7 @@ export default function SleepAndRestPage() {
             <h3 className="font-display text-lg font-bold text-brand-gold">Long Rest (Shrine Only)</h3>
             <ul className="mt-2 space-y-1.5 text-sm text-brand-muted list-disc list-inside">
               <li>Must be done at a <strong className="text-brand-gold">Shrine</strong> — no other location works</li>
-              <li>Fully restores <strong className="text-brand-text">HP</strong> and all <strong className="text-brand-text">spell slots</strong></li>
+              <li>Fully restores <strong className="text-brand-text">HP</strong> and all <Link href="/guides/spell-preparation" className="text-brand-gold underline underline-offset-2 hover:text-brand-text">spell slots</Link></li>
               <li>Removes all Exhaustion levels</li>
             </ul>
           </div>

@@ -1,16 +1,18 @@
+import Link from 'next/link'
 import RiskWarning from '@/components/RiskWarning'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Star Witness (Day 3) Walkthrough — Esoteric Ebb Guide',
   description:
-    'Stuck on the Star Witness quest in Esoteric Ebb? Find the hidden door in City Below NW, learn the Detect Secret spell shortcut, and avoid the Point of No Return.',
+    'Stuck on the Star Witness quest in Esoteric Ebb? Find the hidden door in City Below NW, learn the Detect Secret spell shortcut, map navigation tips (Journal + Behold), and avoid the Point of No Return.',
   keywords: [
     'esoteric ebb walkthrough',
     'esoteric ebb star witness',
     'city below hidden door',
     'esoteric ebb detect secret',
     'esoteric ebb point of no return',
+    'esoteric ebb map',
   ],
 }
 
@@ -58,7 +60,7 @@ export default function StarWitnessPage() {
             Star Witness — Day 3 Walkthrough
           </h1>
           <p className="mt-2 text-brand-muted">
-            Snell keeps telling you to explore City Below but nothing happens? Here&apos;s how to progress.
+            <Link href="/guides/companions" className="text-brand-gold underline underline-offset-2 hover:text-brand-text">Snell</Link> keeps telling you to explore City Below but nothing happens? Here&apos;s how to progress.
           </p>
         </header>
 
@@ -66,7 +68,7 @@ export default function StarWitnessPage() {
         <section className="mt-10">
           <h2 className="font-display text-xl font-bold text-brand-text">The Problem</h2>
           <p className="mt-2 text-sm text-brand-muted">
-            On Day 3, Snell repeatedly reminds you to explore City Below, but the quest log doesn&apos;t update.
+            On Day 3, <Link href="/guides/companions" className="text-brand-gold underline underline-offset-2 hover:text-brand-text">Snell</Link> repeatedly reminds you to explore City Below, but the quest log doesn&apos;t update.
             This is the single most common stuck-point reported by the community.
           </p>
         </section>
@@ -91,7 +93,7 @@ export default function StarWitnessPage() {
                 step: 3,
                 title: 'Reveal the hidden entrance',
                 detail:
-                  'Cast Detect Secret in the NW corner to instantly reveal the entrance. Without the spell, you can still find it by pixel-hunting along the walls.',
+                  'Cast Detect Secret (see spell preparation guide) in the NW corner to instantly reveal the entrance. Without the spell, you can still find it by pixel-hunting along the walls.',
               },
             ].map((s) => (
               <li key={s.step} className="flex gap-4 rounded-lg border border-brand-card bg-brand-surface p-4">
@@ -134,7 +136,7 @@ export default function StarWitnessPage() {
         <section className="mt-10">
           <h2 className="font-display text-xl font-bold text-brand-text">Speak with Dead — Don&apos;t Bother on Day 1</h2>
           <p className="mt-2 text-sm text-brand-muted">
-            <strong className="text-brand-text">Speak with Dead</strong> requires a level-3 spell slot (player level 5+).
+            <strong className="text-brand-text">Speak with Dead</strong> requires a level-3 <Link href="/guides/spell-preparation" className="text-brand-gold underline underline-offset-2 hover:text-brand-text">spell slot</Link> (player level 5+).
             On Day 1 you won&apos;t have it. Even if you could cast it, the body is removed by elves as part of the story — the corpse disappearing is <em>not</em> a bug.
           </p>
         </section>

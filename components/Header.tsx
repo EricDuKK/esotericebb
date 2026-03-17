@@ -7,6 +7,8 @@ const navLinks = [
   { href: '/guides/stats-and-build', label: 'Builds' },
   { href: '/guides/sleep-and-rest', label: 'Rest' },
   { href: '/guides/mage-hand', label: 'Mage Hand' },
+  { href: '/guides/spell-preparation', label: 'Spells' },
+  { href: '/guides/companions', label: 'Companions' },
 ]
 
 export default function Header() {

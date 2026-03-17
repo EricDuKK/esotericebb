@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import RiskWarning from '@/components/RiskWarning'
 import type { Metadata } from 'next'
 
@@ -82,8 +83,8 @@ export default function SphinxRiddlePage() {
           <ul className="mt-3 space-y-2 text-sm text-brand-muted list-disc list-inside">
             <li>Location: <strong className="text-brand-text">The Drunk Sphinx</strong> tavern, Tolstad district</li>
             <li>Time: must arrive in the <strong className="text-brand-text">Morning</strong></li>
-            <li>Party: go <strong className="text-brand-text">alone</strong> (dismiss Snell), otherwise the deep dialogue won&apos;t trigger</li>
-            <li>Know three cantrips: Mage Hand, Druidcraft, Thaumaturgy</li>
+            <li>Party: go <strong className="text-brand-text">alone</strong> (dismiss <Link href="/guides/companions" className="text-brand-gold underline underline-offset-2 hover:text-brand-text">Snell</Link>), otherwise the deep dialogue won&apos;t trigger</li>
+            <li>Know three <Link href="/guides/spell-preparation" className="text-brand-gold underline underline-offset-2 hover:text-brand-text">cantrips</Link>: Mage Hand, Druidcraft, Thaumaturgy</li>
           </ul>
         </section>
 
@@ -135,7 +136,7 @@ export default function SphinxRiddlePage() {
           <p className="mt-2 text-sm text-brand-muted">
             <strong className="text-brand-text">Mage Hand</strong> is essential beyond the Sphinx puzzle.
             Use it to grab the hidden bird-nest item from a tree (an interaction that always fails with Dexterity checks).
-            It&apos;s also one of the three cantrips required for this riddle — make sure you have it before visiting.
+            It&apos;s also one of the three cantrips required for this riddle — see the <Link href="/guides/spell-preparation" className="text-brand-gold underline underline-offset-2 hover:text-brand-text">spell preparation guide</Link> for details.
           </p>
         </section>
       </article>
