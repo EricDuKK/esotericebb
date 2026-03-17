@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     siteName: 'Esoteric Ebb Guide',
   },
+  icons: { icon: '/icon.svg' },
   robots: { index: true, follow: true },
   alternates: {
     canonical: '/',
