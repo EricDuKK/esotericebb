@@ -20,6 +20,15 @@ const jsonLd = {
   '@type': 'HowTo',
   name: 'Solve the Sphinx Riddle in Esoteric Ebb',
   description: 'Cast three cantrips in order at The Drunk Sphinx tavern to earn the Deck of Many Things.',
+  totalTime: 'PT10M',
+  tool: [
+    { '@type': 'HowToTool', name: 'Mage Hand (Arcane cantrip)' },
+    { '@type': 'HowToTool', name: 'Druidcraft (Nature cantrip)' },
+    { '@type': 'HowToTool', name: 'Thaumaturgy (Divine cantrip)' },
+  ],
+  supply: [
+    { '@type': 'HowToSupply', name: 'Manual save file (backup before drawing cards)' },
+  ],
   step: [
     {
       '@type': 'HowToStep',
@@ -52,6 +61,8 @@ const jsonLd = {
       text: 'The Sphinx rewards you with the Deck of Many Things artifact. Save before drawing — results are random.',
     },
   ],
+  mainEntityOfPage: 'https://esotericebb.guide/guides/sphinx-riddle',
+  about: { '@type': 'VideoGame', name: 'Esoteric Ebb' },
 }
 
 export default function SphinxRiddlePage() {

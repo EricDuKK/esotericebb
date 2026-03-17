@@ -19,26 +19,33 @@ const jsonLd = {
   '@type': 'HowTo',
   name: 'How to Rest and Sleep in Esoteric Ebb',
   description: 'Understand the rest system: Short Rests remove exhaustion, Long Rests at Shrines restore everything.',
+  totalTime: 'PT5M',
+  tool: [
+    { '@type': 'HowToTool', name: 'Journal (to locate discovered Shrines)' },
+    { '@type': 'HowToTool', name: 'Behold ability (to scan for Shrine landmarks)' },
+  ],
   step: [
     {
       '@type': 'HowToStep',
       position: 1,
       name: 'Short Rest',
-      text: 'Take a Short Rest anywhere to remove one level of Exhaustion.',
+      text: 'Take a Short Rest anywhere to remove one level of Exhaustion. Does not restore HP or spell slots.',
     },
     {
       '@type': 'HowToStep',
       position: 2,
       name: 'Find a Shrine',
-      text: 'Locate a Shrine in the world — these are the only places where Long Rests are possible.',
+      text: 'Locate a Shrine using Journal or Behold — these are the only places where Long Rests are possible.',
     },
     {
       '@type': 'HowToStep',
       position: 3,
       name: 'Long Rest',
-      text: 'Perform a Long Rest at a Shrine to fully restore HP and all spell slots.',
+      text: 'Perform a Long Rest at a Shrine to fully restore HP, all spell slots, and remove all Exhaustion levels.',
     },
   ],
+  mainEntityOfPage: 'https://esotericebb.guide/guides/sleep-and-rest',
+  about: { '@type': 'VideoGame', name: 'Esoteric Ebb' },
 }
 
 export default function SleepAndRestPage() {

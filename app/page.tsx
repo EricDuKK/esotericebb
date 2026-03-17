@@ -24,9 +24,105 @@ export const metadata: Metadata = {
   ],
 }
 
+const videoGameJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'VideoGame',
+  name: 'Esoteric Ebb',
+  description: 'A narrative-driven RPG built on D&D-inspired mechanics, featuring riddles, political intrigue, and arcane secrets.',
+  genre: ['Role-Playing', 'Adventure', 'Puzzle'],
+  gamePlatform: ['PC', 'Steam', 'Steam Deck'],
+  operatingSystem: 'Windows',
+  applicationCategory: 'Game',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.2',
+    ratingCount: '1200',
+    bestRating: '5',
+    worstRating: '1',
+  },
+  offers: {
+    '@type': 'Offer',
+    availability: 'https://schema.org/InStock',
+    priceCurrency: 'USD',
+    url: 'https://store.steampowered.com',
+  },
+}
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'How do I solve the Sphinx Riddle in Esoteric Ebb?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Go to The Drunk Sphinx tavern in Tolstad in the Morning, alone (without Snell). Cast three cantrips in order near the stage: Mage Hand (Arcane), Druidcraft (Nature), Thaumaturgy (Divine). This rewards you with the Deck of Many Things.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where is the hidden door in City Below for the Star Witness quest?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Head to the Northwest (NW) section of City Below. The hidden door is along the NW wall. You can find it by casting Detect Secret (learned from the Underdwarf in the Goblin Underground Garden) or by carefully searching the walls.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Why does Speak with Dead fail in Esoteric Ebb?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Speak with Dead requires a level-3 spell slot (player level 5+). On Day 1 your level is too low. Additionally, the body is removed by elves as a story event — this is intentional, not a bug.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the best build in Esoteric Ebb?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Intelligence is the best primary stat for investigation — it unlocks passive checks that reveal hidden clues automatically. Charisma is best for dialogue manipulation. Dexterity is the weakest stat for the protagonist; use Mage Hand instead of DEX checks.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How long is Esoteric Ebb?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The main story takes approximately 25 hours. A completionist run (all side-quests, collectibles, and companion content) takes around 50 hours. The level cap is 6.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is Esoteric Ebb on PS5, Xbox, or Switch?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Esoteric Ebb is currently PC-only, available on Steam with Steam Deck support. There is no confirmed PS5, Xbox, or Nintendo Switch release at this time.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where can I sleep in Esoteric Ebb?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Long Rests (full HP and spell slot recovery) can only be performed at Shrines. Short Rests can be taken anywhere and remove one level of Exhaustion. Use the Journal and Behold ability to locate Shrines.',
+      },
+    },
+  ],
+}
+
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(videoGameJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-brand-card">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-gold/5 via-transparent to-transparent" />

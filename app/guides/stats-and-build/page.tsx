@@ -21,6 +21,12 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'Esoteric Ebb Stats & Build Guide — Intelligence vs Charisma',
   description: 'Deep dive into Intelligence and Charisma builds in Esoteric Ebb, with stat priorities and pitfalls to avoid.',
+  author: { '@type': 'Organization', name: 'Esoteric Ebb Guide', url: 'https://esotericebb.guide' },
+  publisher: { '@type': 'Organization', name: 'Esoteric Ebb Guide', url: 'https://esotericebb.guide' },
+  datePublished: '2025-03-15',
+  dateModified: '2026-03-17',
+  mainEntityOfPage: 'https://esotericebb.guide/guides/stats-and-build',
+  about: { '@type': 'VideoGame', name: 'Esoteric Ebb' },
 }
 
 const stats = [

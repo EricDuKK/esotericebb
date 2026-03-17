@@ -21,6 +21,11 @@ const jsonLd = {
   '@type': 'HowTo',
   name: 'Complete the Star Witness Quest in Esoteric Ebb',
   description: 'Find the hidden door in City Below and progress the Star Witness quest on Day 3.',
+  totalTime: 'PT15M',
+  tool: [
+    { '@type': 'HowToTool', name: 'Detect Secret spell (optional but recommended)' },
+    { '@type': 'HowToTool', name: 'Behold ability (environmental scanner)' },
+  ],
   step: [
     {
       '@type': 'HowToStep',
@@ -41,6 +46,8 @@ const jsonLd = {
       text: 'Cast Detect Secret in the NW corner to reveal the hidden entrance, or explore carefully to find the door manually.',
     },
   ],
+  mainEntityOfPage: 'https://esotericebb.guide/guides/star-witness',
+  about: { '@type': 'VideoGame', name: 'Esoteric Ebb' },
 }
 
 export default function StarWitnessPage() {
