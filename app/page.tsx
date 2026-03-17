@@ -24,7 +24,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-brand-card">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-gold/5 via-transparent to-transparent" />
-        <div className="relative mx-auto max-w-4xl px-4 py-20 text-center">
+        <div className="relative mx-auto max-w-4xl px-4 py-10 text-center">
           <h1
             className="font-display text-4xl font-black leading-tight tracking-tight text-brand-text sm:text-5xl md:text-6xl animate-fade-up"
           >
