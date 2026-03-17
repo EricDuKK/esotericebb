@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     siteName: 'Esoteric Ebb Guide',
   },
   robots: { index: true, follow: true },
+  alternates: {
+    canonical: '/',
+  },
 }
 
 const siteJsonLd = {
