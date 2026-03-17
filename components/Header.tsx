@@ -4,6 +4,9 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/guides/sphinx-riddle', label: 'Sphinx Riddle' },
   { href: '/guides/star-witness', label: 'Star Witness' },
+  { href: '/guides/stats-and-build', label: 'Builds' },
+  { href: '/guides/sleep-and-rest', label: 'Rest' },
+  { href: '/guides/mage-hand', label: 'Mage Hand' },
 ]
 
 export default function Header() {

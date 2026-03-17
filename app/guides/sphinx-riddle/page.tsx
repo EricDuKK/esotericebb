@@ -2,7 +2,7 @@ import RiskWarning from '@/components/RiskWarning'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Sphinx Riddle Solution — Esoteric Ebb Guide',
+  title: 'Sphinx Riddle & Deck of Many Things — Esoteric Ebb Guide',
   description:
     'Step-by-step Sphinx riddle solution in Esoteric Ebb: exact cantrip order (Mage Hand → Druidcraft → Thaumaturgy), how to earn the Deck of Many Things, and risk warnings.',
   keywords: [
@@ -70,7 +70,9 @@ export default function SphinxRiddlePage() {
             Sphinx Riddle Solution
           </h1>
           <p className="mt-2 text-brand-muted">
-            How to solve the riddle at The Drunk Sphinx and earn the <strong className="text-brand-gold">Deck of Many Things</strong>.
+            Quick answer: cast <strong className="text-brand-text">Mage Hand → Druidcraft → Thaumaturgy</strong> at
+            The Drunk Sphinx tavern to earn the <strong className="text-brand-gold">Deck of Many Things</strong>.
+            Full walkthrough below.
           </p>
         </header>
 

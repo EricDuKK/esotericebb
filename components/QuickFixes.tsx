@@ -23,13 +23,13 @@ const fixes = [
   {
     keyword: 'Mage Hand',
     desc: 'How to get it & hidden bird-nest item',
-    href: '/guides/sphinx-riddle#mage-hand',
+    href: '/guides/mage-hand',
     tag: 'Spell',
   },
   {
     keyword: 'Rest & Sleep',
     desc: 'Shrine locations, exhaustion & recovery',
-    href: '#rest-mechanics',
+    href: '/guides/sleep-and-rest',
     tag: 'Mechanics',
   },
 ]
