@@ -16,7 +16,7 @@ export default function Footer() {
           <GameInfo />
         </div>
         <p className="mt-8 text-center text-xs text-brand-muted/60">
-          &copy; {new Date().getFullYear()} esotericebb.guide &middot; Fan-made &middot; All game assets belong to their respective owners.
+          &copy; {new Date().getFullYear()} esotericebb-guide.sbs &middot; Fan-made &middot; All game assets belong to their respective owners.
         </p>
       </div>
     </footer>

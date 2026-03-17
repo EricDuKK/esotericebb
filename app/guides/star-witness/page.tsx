@@ -46,7 +46,7 @@ const jsonLd = {
       text: 'Cast Detect Secret in the NW corner to reveal the hidden entrance, or explore carefully to find the door manually.',
     },
   ],
-  mainEntityOfPage: 'https://esotericebb.guide/guides/star-witness',
+  mainEntityOfPage: 'https://esotericebb-guide.sbs/guides/star-witness',
   about: { '@type': 'VideoGame', name: 'Esoteric Ebb' },
 }
 

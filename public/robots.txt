@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://esotericebb.guide/sitemap.xml
+Sitemap: https://esotericebb-guide.sbs/sitemap.xml

@@ -17,11 +17,11 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'Esoteric Ebb Companion Guide — Snell & Party Members',
   description: 'Everything about Snell and companion mechanics in Esoteric Ebb.',
-  author: { '@type': 'Organization', name: 'Esoteric Ebb Guide', url: 'https://esotericebb.guide' },
-  publisher: { '@type': 'Organization', name: 'Esoteric Ebb Guide', url: 'https://esotericebb.guide' },
+  author: { '@type': 'Organization', name: 'Esoteric Ebb Guide', url: 'https://esotericebb-guide.sbs' },
+  publisher: { '@type': 'Organization', name: 'Esoteric Ebb Guide', url: 'https://esotericebb-guide.sbs' },
   datePublished: '2025-03-15',
   dateModified: '2026-03-17',
-  mainEntityOfPage: 'https://esotericebb.guide/guides/companions',
+  mainEntityOfPage: 'https://esotericebb-guide.sbs/guides/companions',
   about: { '@type': 'VideoGame', name: 'Esoteric Ebb' },
 }
 

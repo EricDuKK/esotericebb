@@ -19,11 +19,11 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'Mage Hand in Esoteric Ebb — Location, Uses & Why You Need It',
   description: 'Mage Hand is essential for grabbing the hidden bird-nest item and completing the Sphinx Riddle.',
-  author: { '@type': 'Organization', name: 'Esoteric Ebb Guide', url: 'https://esotericebb.guide' },
-  publisher: { '@type': 'Organization', name: 'Esoteric Ebb Guide', url: 'https://esotericebb.guide' },
+  author: { '@type': 'Organization', name: 'Esoteric Ebb Guide', url: 'https://esotericebb-guide.sbs' },
+  publisher: { '@type': 'Organization', name: 'Esoteric Ebb Guide', url: 'https://esotericebb-guide.sbs' },
   datePublished: '2025-03-15',
   dateModified: '2026-03-17',
-  mainEntityOfPage: 'https://esotericebb.guide/guides/mage-hand',
+  mainEntityOfPage: 'https://esotericebb-guide.sbs/guides/mage-hand',
   about: { '@type': 'VideoGame', name: 'Esoteric Ebb' },
 }
 

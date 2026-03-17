@@ -44,7 +44,7 @@ const jsonLd = {
       text: 'Perform a Long Rest at a Shrine to fully restore HP, all spell slots, and remove all Exhaustion levels.',
     },
   ],
-  mainEntityOfPage: 'https://esotericebb.guide/guides/sleep-and-rest',
+  mainEntityOfPage: 'https://esotericebb-guide.sbs/guides/sleep-and-rest',
   about: { '@type': 'VideoGame', name: 'Esoteric Ebb' },
 }
 

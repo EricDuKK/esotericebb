@@ -61,7 +61,7 @@ const jsonLd = {
       text: 'The Sphinx rewards you with the Deck of Many Things artifact. Save before drawing — results are random.',
     },
   ],
-  mainEntityOfPage: 'https://esotericebb.guide/guides/sphinx-riddle',
+  mainEntityOfPage: 'https://esotericebb-guide.sbs/guides/sphinx-riddle',
   about: { '@type': 'VideoGame', name: 'Esoteric Ebb' },
 }
 

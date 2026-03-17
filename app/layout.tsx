@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 import './globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://esotericebb.guide'),
+  metadataBase: new URL('https://esotericebb-guide.sbs'),
   title: {
     default: 'Esoteric Ebb Guide — Walkthrough, Riddles & Tips',
     template: '%s | Esoteric Ebb Guide',
@@ -26,11 +26,11 @@ const siteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Esoteric Ebb Guide',
-  url: 'https://esotericebb.guide',
+  url: 'https://esotericebb-guide.sbs',
   description: 'Community-driven walkthrough and tips for Esoteric Ebb.',
   potentialAction: {
     '@type': 'SearchAction',
-    target: 'https://esotericebb.guide/?q={search_term_string}',
+    target: 'https://esotericebb-guide.sbs/?q={search_term_string}',
     'query-input': 'required name=search_term_string',
   },
 }

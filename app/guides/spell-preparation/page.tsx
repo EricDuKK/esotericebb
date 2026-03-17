@@ -19,11 +19,11 @@ const jsonLd = {
   '@type': 'Article',
   headline: 'Spell Preparation & Casting in Esoteric Ebb — Complete Guide',
   description: 'Understand cantrips, spell slots, level requirements, and which spells to prepare first.',
-  author: { '@type': 'Organization', name: 'Esoteric Ebb Guide', url: 'https://esotericebb.guide' },
-  publisher: { '@type': 'Organization', name: 'Esoteric Ebb Guide', url: 'https://esotericebb.guide' },
+  author: { '@type': 'Organization', name: 'Esoteric Ebb Guide', url: 'https://esotericebb-guide.sbs' },
+  publisher: { '@type': 'Organization', name: 'Esoteric Ebb Guide', url: 'https://esotericebb-guide.sbs' },
   datePublished: '2025-03-15',
   dateModified: '2026-03-17',
-  mainEntityOfPage: 'https://esotericebb.guide/guides/spell-preparation',
+  mainEntityOfPage: 'https://esotericebb-guide.sbs/guides/spell-preparation',
   about: { '@type': 'VideoGame', name: 'Esoteric Ebb' },
 }
 
